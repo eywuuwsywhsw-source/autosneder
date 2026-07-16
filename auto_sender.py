@@ -8,14 +8,13 @@ from telethon.errors import FloodWaitError
 API_ID = 36705427
 API_HASH = 'e69a36dc2b8c258d36d0d31c854d4aa7'
 PHONE_NUMBER = '+447881257902'
-
-# ✅ YOUR SESSION STRING
 SESSION_STRING = '1BJWap1sBu7Bl_IExUg758pVPDKo93Na5AfJyb7y7I0-i2a8oSTEAbWKf9YmUNQMaUHk7UtW72V2CZiVJAxfUpp-s01qfXEXYf8C82DFtdxo5ahX-W3RgtDveSMlJbloF99Ytjig7z4gBe2xl-uW3U8ltwoOVkhVTOZoX_QUnS4B_cNt-zUXBbefo_PtstyjwVd11eX8QkxedV6wg3oAvZ1szJrtyw8rYy7F021yufK1iQHnsfnTHqXxhd_YNrTgiklX6Is3_QjfQHJz8e6lxN7doI2sqk7C9fgc6Js-UVxZlu5MugqfqsTbeQUiujQuiOOAIxel8pz6H34PuTgWUFjYRexHK1SA='
 
 INVITE_LINK = 'https://t.me/+XwxJN7zdcetiNDRl'
-DELAY_SECONDS = 60  # 1 minute
+DELAY_SECONDS = 60
 # =====================================================
 
+# ✅ UPDATED: username changed to @GPT_Providers
 MESSAGE_TEMPLATE = """• UPI QR Generate(0.7$)
 • Chat Gpt Plus 1Month On Mail($2.5)
 • Netflix 1 Month on Mail (2.5$)
@@ -24,7 +23,7 @@ MESSAGE_TEMPLATE = """• UPI QR Generate(0.7$)
 • Selling Chat Gpt Plus Method (8$)
 • Selling Netflix 30days Trial Method (10$)
 ✅ Escrow Accepted
-📩 DM to Buy @riskcreator"""
+📩 DM to Buy @GPT_Providers"""
 
 async def main():
     client = TelegramClient(SESSION_STRING, API_ID, API_HASH)
