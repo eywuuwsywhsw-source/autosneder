@@ -1,15 +1,15 @@
 import asyncio
-from telethon import TelegramClient, sessions  # <-- changed
+from telethon import TelegramClient, sessions  # <-- import sessions
 from telethon.errors import FloodWaitError
 
 # =====================================================
-# 🔧 ALL YOUR CREDENTIALS (Hardcoded)
+# 🔧 HARDCODED CREDENTIALS (no environment variables)
 # =====================================================
 API_ID = 36705427
 API_HASH = 'e69a36dc2b8c258d36d0d31c854d4aa7'
 PHONE_NUMBER = '+447881257902'
 
-# Your session string (as a string)
+# ⭐ Your session string (from earlier)
 SESSION_STRING = '1BJWap1sBu7Bl_IExUg758pVPDKo93Na5AfJyb7y7I0-i2a8oSTEAbWKf9YmUNQMaUHk7UtW72V2CZiVJAxfUpp-s01qfXEXYf8C82DFtdxo5ahX-W3RgtDveSMlJbloF99Ytjig7z4gBe2xl-uW3U8ltwoOVkhVTOZoX_QUnS4B_cNt-zUXBbefo_PtstyjwVd11eX8QkxedV6wg3oAvZ1szJrtyw8rYy7F021yufK1iQHnsfnTHqXxhd_YNrTgiklX6Is3_QjfQHJz8e6lxN7doI2sqk7C9fgc6Js-UVxZlu5MugqfqsTbeQUiujQuiOOAIxel8pz6H34PuTgWUFjYRexHK1SA='
 
 INVITE_LINK = 'https://t.me/+XwxJN7zdcetiNDRl'
@@ -27,7 +27,7 @@ MESSAGE_TEMPLATE = """• UPI QR Generate(0.7$)
 📩 DM to Buy @GPT_Providers"""
 
 async def main():
-    # ✅ Wrap the string in StringSession – no file is created
+    # ✅ Wrap the string in StringSession – no database file created
     client = TelegramClient(sessions.StringSession(SESSION_STRING), API_ID, API_HASH)
     await client.start(phone=PHONE_NUMBER)
     print("✅ Logged in successfully!")
